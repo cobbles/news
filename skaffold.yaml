@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta25
+kind: Config
+metadata:
+  name: news
+build:
+  artifacts:
+  - image: ghcr.io/cobbles/news/news-app
+    context: app
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kustomize:
+    paths:
+    - k8s/bases/news-app
