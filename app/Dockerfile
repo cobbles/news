@@ -13,8 +13,12 @@ COPY . .
 COPY --from=deps /app/node_modules ./node_modules
 RUN npm run build
 
-# Production image, copy all the files and run next
-FROM node:16-alpine AS runner
+# Development image, runs the build stage in dev mode
+FROM builder AS dev
+CMD ["npm", "run", "dev"]
+
+# Production image, copy all the files and run next start
+FROM node:16-alpine AS prod
 WORKDIR /app
 
 ENV NODE_ENV production

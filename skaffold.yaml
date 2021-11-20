@@ -8,7 +8,21 @@ build:
     context: app
     docker:
       dockerfile: Dockerfile
+      target: prod
+    sync:
+      manual:
+      - src: '**/*'
+        dest: '.'
 deploy:
   kustomize:
     paths:
     - k8s/bases/news-app
+
+profiles:
+- name: dev
+  activation:
+  - command: dev
+  patches:
+  - op: replace
+    path: /build/artifacts/0/docker/target
+    value: dev
