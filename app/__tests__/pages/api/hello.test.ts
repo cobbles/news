@@ -1,5 +1,5 @@
 import { createMocks } from 'node-mocks-http';
-import handler from '../../../pages/api/hello';
+import handler from 'pages/api/hello';
 
 describe('/api/hello', () => {
   test('should return John Doe', async () => {
