@@ -10,11 +10,11 @@ export default function NavMenu(props: Props) {
   return (
     <>
       <Head>
-        <title>News site</title>
+        <title>News</title>
       </Head>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="#home">News Site</Navbar.Brand>
+          <Navbar.Brand href="#home">News</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Navbar>

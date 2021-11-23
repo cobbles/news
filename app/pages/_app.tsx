@@ -1,4 +1,4 @@
-import 'style/index.css'
+import 'style/index.scss'
 import { AppProps } from 'next/app';
 import React from 'react'
 import NavMenu from 'components/NavMenu';
