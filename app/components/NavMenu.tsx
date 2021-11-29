@@ -12,18 +12,20 @@ export default function NavMenu(props: Props) {
       <Head>
         <title>News</title>
       </Head>
-      <Navbar expand="lg">
+      <div className="bg-dark">
         <Container>
-          <Navbar.Brand href="#home">News</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Navbar>
-              <NavLink href="/">Home</NavLink>
-              <NavLink href="/">Link</NavLink>
-            </Navbar>
-          </Navbar.Collapse>
+          <Navbar variant="dark" expand="lg">
+            <Navbar.Brand href="/">News</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Navbar>
+                <NavLink href="/">Hacker News</NavLink>
+                <NavLink href="/">Link</NavLink>
+              </Navbar>
+            </Navbar.Collapse>
+          </Navbar>
         </Container>
-      </Navbar>
+      </div>
       <main>{props.children}</main>
     </>
   )

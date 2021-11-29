@@ -1,0 +1,15 @@
+$primary:#FF550B;
+$secondary:#303030;
+$success:#015668;
+$danger:#FF304F;
+$info:#0F81C7;
+$warning:#0DE2EA;
+
+// /*! Import Bootstrap 5 variables */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+$body-bg:$black;
+
+@import "~bootstrap/scss/bootstrap";
+
+// Add SASS theme customizations here..
