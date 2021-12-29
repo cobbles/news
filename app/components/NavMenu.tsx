@@ -19,8 +19,8 @@ export default function NavMenu(props: Props) {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Navbar>
-                <NavLink href="/">Hacker News</NavLink>
-                <NavLink href="/">Link</NavLink>
+                <NavLink href="/">News</NavLink>
+                <NavLink href="/">Newest</NavLink>
               </Navbar>
             </Navbar.Collapse>
           </Navbar>
